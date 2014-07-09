@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happyfellas - Web and mobile app development Singapore | SEO | Social Media management Singapore</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+<link href='http://fonts.googleapis.com/css?family=Kameron:700' rel='stylesheet' type='text/css'>
+</head>
+<header>
+	<div class="container">
+		<h1>
+			<a class="brand" href="/">
+				<img src="images/smiley.png" height="28" width="28" />
+			happyfellas.com</a>
+		</h1>
+
+		<nav>
+		  
+      <a href="http://blog.paperplane.io">Work</a>
+		    <a href="#">Contact</a>
+		  
+		</nav>
+
+	</div>
+</header>
+
+<body>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+@import 'bootstrap';
+
+@font-face {
+  font-family: 'Podkova';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Podkova'), local('Podkova-Regular'), url(http://themes.googleusercontent.com/static/fonts/podkova/v6/kr_ENTtdlqQbrdQMb3BZtgLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/0XxGQsSc1g4rdRdjJKZrNL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+    font-family: PreloSlab;
+    src: url(preloslab-bold-webfont.woff);
+}
+
+
+body
+{
+	background: #f5f4e9 url("/images/bg.png") top left repeat;
+}
+body header .brand
+{
+	font-weight:bold;
+	color: #0b1b1f;
+	font-family: "Podkova",helvetica,sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	font-size: 26px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	float:left;
+	
+}
+body header nav 
+{
+	float:right;
+}
+
+body header nav a
+{
+	color: #460e00;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 20px;
+}
+section.hero
+{
+	height:500px;
+	padding-top:160px;
+	margin-bottom:60px;
+	color: #460e00;
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.12);
+	font-size: 14px;
+	text-align: center;
+	
+}
+
+section.hero h1
+{
+	font-family: 'Kameron', serif;
+	font-size: 44px;
+	line-height: 52px;
+	margin-bottom: 15px;
+	color: #0b1b1f;
+	text-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+}
+
+section.hero p.tagline
+{
+	color: #460e00;
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.12);
+	font-size: 14px;
+}
+
+section.hero p.tagline.main
+{
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 75px;
+}
+
+a.button {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-size: 24px;
+    background: #93311a;
+    color: #fff;
+    padding: 17px 60px 13px;
+    text-decoration: none;
+    position: relative
+}
+
+a.button:hover {
+    background: #632112
+}
+
+a.button:before {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.13)), color-stop(100%, transparent));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.13), transparent);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.13), transparent);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.13), transparent);
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.13), transparent);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #f5f4e9;
+    content: " ";
+    z-index: -1;
+    position: absolute;
+    width: 110%;
+    height: 135%;
+    left: -5%;
+    top: -18%
+}
+
+
+
+/***************Can Edit ****************/
+
+section.features {
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2) inset, 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2) inset, 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2) inset, 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    background: #df4b28 url("/images/bg.png") top left repeat;
+    color: #f5f4e9;
+    padding: 70px 0 0;
+    text-align: center;
+    position: relative
+}
+
+section.features .feature {
+    *zoom: 1;
+    max-width: 59em;
+    _width: 59em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding: 25px 0 75px
+}
+
+section.features .feature:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+section.features .feature .graphic {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline
+}
+
+section.features .feature .copy {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+    line-height: 1.5
+}
+
+section.features .feature h2 {
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    font-family: 'Kameron', helvetica, arial, sans-serif;
+    line-height: 1.3;
+    font-size: 18px;
+    margin-bottom: .5em;
+    color: #fff
+}
+
+section.features .feature p {
+    margin-bottom: .8em;
+    color: #f5f4e9
+}
+
+section.features .feature .copy {
+    text-align: left
+}
+
+section.features .feature.simple .graphic h2 {
+    font-size: 24px;
+    margin-top: 1em
+}
+
+section.features .feature.sources .graphic {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline
+}
+
+section.features .feature.sources .copy {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline
+}
+
+section.features .feature.pricing .copy {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline
+}
+
+section.features .feature.pricing .graphic {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+    padding-top: 25px;
+    height: 115px;
+    background: transparent url("/images/bg.pricing.jpg") center center no-repeat;
+    color: #0b1b1f;
+    font-family: "PreloSlabBold", Rockwell, helvetica, arial, sans-serif;
+    font-size: 48px
+}
+
+section.features .feature.pricing .graphic em, section.features .feature.pricing .graphic sub {
+    font-size: 14px
+}
+
+section.features .feature.pricing .graphic sup {
+    vertical-align: super;
+    font-style: italic
+}
+
+section.features .feature.pricing .graphic small {
+    display: block;
+    margin-top: 15px;
+    font-size: 10px;
+    font-style: italic;
+    font-family: "PT Sans", helvetica, arial, sans-serif
+}
+
+section.features .button {
+    display: inline-block;
+    bottom: -25px;
+    z-index: 2
+}
+
+section.features .button:before {
+    background-color: transparent
+}
+
+
+section.text {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fefdfc;
+    padding: 30px
+}
+
+section.text .nav-pills {
+    float: right
+}
+
+section.text .nav-pills a {
+    color: #555
+}
+
+section.text .nav-pills li.active a {
+    background: #555;
+    color: #fff
+}
+
+section.text p {
+    margin-bottom: 16px;
+    line-height: 1.4
+}
+
+section.text em {
+    font-style: italic
+}
+
+section.text ol {
+    margin: 1em 1.2em
+}
+
+section.text ol li {
+    list-style-type: decimal;
+    line-height: 1.4
+}
+
+section.text ol li ol {
+    margin: 1em 1em 1em 2em
+}
+
+section.text ol li ol li {
+    list-style-type: lower-alpha;
+    margin-bottom: .5em
+}
+
+section.text h1, section.text h2, section.text h3, section.text h4 {
+    font-weight: bold;
+    margin-bottom: .8em;
+    color: #555
+}
+
+section.text h1 {
+    font-size: 24px;
+    border-bottom: 2px solid #555;
+    padding: 10px 0
+}
+
+section.text h2 {
+    font-size: 18px;
+    border-bottom: 2px solid #555;
+    text-transform: uppercase;
+    margin: 1.2em 0
+}
+
+section.text h3 {
+    font-size: 16px
+}
+
+section.text p.modified {
+    text-align: center;
+    font-style: italic;
+    color: #ccc;
+    padding: 10px
+}
+
+body footer
+{
+	text-align: center;
+	padding: 80px 0 20px;
+	background: #e5e3cc;
+	color: #a1a08f;
+}
+
