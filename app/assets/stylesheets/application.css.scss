@@ -77,6 +77,8 @@ section.hero h1
 	margin-bottom: 15px;
 	color: #0b1b1f;
 	text-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+	letter-spacing: -0.05em;
+	word-spacing:0.1em;
 }
 
 section.hero p.tagline
@@ -214,11 +216,15 @@ section.features .feature h2 {
     margin-bottom: .5em;
     color: #fff;
 	text-shadow: -1px -1px rgba(0, 0, 0, 0.6);
+	letter-spacing: -0.05em;
+	word-spacing:0.1em;
 
 }
 section.features .feature h3 {
 	color:#fff;
 	text-shadow: -1px -1px rgba(0, 0, 0, 0.6);
+	letter-spacing: -0.05em;
+	word-spacing:0.1em;
 	
 }
 
