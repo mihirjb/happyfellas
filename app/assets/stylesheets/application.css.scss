@@ -27,8 +27,7 @@
 
 body
 {
-	background: #f5f4e9 url("assets/
-	bg.png") top left repeat;
+	background: #f5f4e9 url("assets/bg.png") top left repeat;
 }
 body header .brand
 {
@@ -61,6 +60,11 @@ section.hero
 	margin-bottom:60px;
 	text-align: center;
 	padding-top:160px;
+	background-image: -webkit-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
+	background-image: -moz-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
+	background-image: -ms-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
+	background-image: -o-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
+	background-image: radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
 	
 }
 
@@ -163,7 +167,8 @@ section.features {
     color: #f5f4e9;
     padding: 70px 0 0;
     text-align: center;
-    position: relative
+    position: relative;
+
 }
 
 section.features .feature {

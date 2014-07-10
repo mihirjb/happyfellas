@@ -16,11 +16,11 @@
 		<%= form_for(@potentialclient, :url => '/potentialclients', :method => 'POST') do |f| %>
 		 	<div class="form-group">
 			<div class="input-group-lg">
-		 <%= f.email_field :email, :class=> "form-control required", :placeholder=>"Email", :required => true %>
-		 <%= f.text_field :fullname, :class=> "form-control required", :placeholder=>"Full Name", :required => true %><br/><br/>
-		<%= f.label :worktype, "Type of Work" %>
-			<%= f.select :worktype , [['Everything','Everything'], ['Web design','Web design'], ['Web development','Web development'], ['Mobile App development','Mobile App development'], ['SEO','SEO'], ['Others','Others']],  :autofocus => true, :class=> "form-control"%><br/><br/>
-			<%= f.label :budget, "Your Budget" %>
+		 <%= f.email_field :email, :class=> "form-control required", :placeholder=>"My Email address is", :required => true %>
+		 <%= f.text_field :fullname, :class=> "form-control required", :placeholder=>"My Full Name is ", :required => true %><br/><br/>
+		<%= f.label :worktype, "I want you to make " %>
+			<%= f.select :worktype , [ ['Website','Website'], ['Software','Software'], ['Mobile App','Mobile App'], ['SEO campaign','SEO campaign'], ['Social Media Campaign','Social Media Campaign'], ['All of them','All of them']],  :autofocus => true, :class=> "form-control"%><br/><br/>
+			<%= f.label :budget, "And my budget is" %>
 			
 			<%= f.select :budget , [['Under 1000', 'Under 1000'], ['1000-2500','1000-2500'], ['2500-5000','2500-5000'], ['5000-10000','5000-10000'], ['Above 10000','Above 10000']],  :autofocus => true, :class=> "form-control"%>
 		
@@ -96,13 +96,13 @@
 		<%= form_for(@potentialclient, :url => '/potentialclients', :method => 'POST') do |f| %>
 		 	<div class="form-group">
 			<div class="input-group-lg">
-		 <%= f.email_field :email, :class=> "form-control required", :placeholder=>"Email", :required => true %>
-		 <%= f.text_field :fullname, :class=> "form-control required", :placeholder=>"Full Name", :required => true %><br/><br/>
-		<%= f.label :worktype, "Type of Work" %>
-			<%= f.select :worktype , [['Everything','Everything'], ['Web design','Web design'], ['Web development','Web development'], ['Mobile App development','Mobile App development'], ['SEO','SEO'], ['Others','Others']],  :autofocus => true, :class=> "form-control"%><br/><br/>
-			<%= f.label :budget, "Your Budget" %>
-			
-			<%= f.select :budget , [['Under 1000', 'Under 1000'], ['1000-2500','1000-2500'], ['2500-5000','2500-5000'], ['5000-10000','5000-10000'], ['Above 10000','Above 10000']],  :autofocus => true, :class=> "form-control"%>
+				 <%= f.email_field :email, :class=> "form-control required", :placeholder=>"My Email address is", :required => true %>
+				 <%= f.text_field :fullname, :class=> "form-control required", :placeholder=>"My Full Name is ", :required => true %><br/><br/>
+				<%= f.label :worktype, "I want you to make " %>
+					<%= f.select :worktype , [ ['Website','Website'], ['Software','Software'], ['Mobile App','Mobile App'], ['SEO campaign','SEO campaign'], ['Social Media Campaign','Social Media Campaign'], ['All of them','All of them']],  :autofocus => true, :class=> "form-control"%><br/><br/>
+					<%= f.label :budget, "And my budget is" %>
+
+					<%= f.select :budget , [['Under 1000', 'Under 1000'], ['1000-2500','1000-2500'], ['2500-5000','2500-5000'], ['5000-10000','5000-10000'], ['Above 10000','Above 10000']],  :autofocus => true, :class=> "form-control"%>
 		
 		</div>
 		</div>
