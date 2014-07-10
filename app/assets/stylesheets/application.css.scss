@@ -199,12 +199,19 @@ section.features .feature h2 {
     line-height: 1.3;
     font-size: 18px;
     margin-bottom: .5em;
-    color: #fff
+    color: #fff;
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.6);
+
+}
+section.features .feature h3 {
+	color:#fff;
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.6);
+	
 }
 
 section.features .feature p {
     margin-bottom: .8em;
-    color: #f5f4e9
+    color: #cecece
 }
 
 section.features .feature .copy {
@@ -247,7 +254,8 @@ section.features .feature.pricing .graphic {
     padding-top: 25px;
     height: 115px;
     background: transparent url("/images/bg.pricing.jpg") center center no-repeat;
-    color: #0b1b1f;
+    color: #cecece;
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.6);
     font-family: "PreloSlabBold", Rockwell, helvetica, arial, sans-serif;
     font-size: 48px
 }
@@ -384,6 +392,8 @@ section.testimonial-text  h1 {
 	text-align:center;
 	float:left;
 	color: #a1a08f;
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.6);
+	
 	
 }
 
@@ -400,4 +410,5 @@ color: #0b1b1f;
 line-height:1.5em;
 padding:10px 0px;
 border-bottom: 1px dashed #a1a08f;
+
 }
