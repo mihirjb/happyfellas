@@ -42,20 +42,6 @@ body header .brand
 	float:left;
 	
 }
-form select {
-	font-size:18px;
-	color:#000;
-	font-weight:bold;
-  width: 100%;
-	height:40px;
-  border: 1px solid #ccc;
-padding:0px 10px;
-  background-color: #fff;
--webkit-appearance:none;
--moz-appearance:none;
--o-appearance:none;
-border-radius:2px;
-}
 
 body header nav 
 {
@@ -102,11 +88,14 @@ section.hero p.tagline.main
 	margin-bottom: 75px;
 }
 
-section.hero div.conatainer div.modal form label 
+form label 
 {
 	text-align:left;
 	margin-bottom:15px;
+	float:left;
+	color:#000;
 }
+
 a.button {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -431,6 +420,36 @@ padding:10px 0px;
 border-bottom: 1px dashed #a1a08f;
 
 }
-body section.thankyoupage
+h1.modal-title
 {
+	font-family: 'Kameron', serif;
+	font-size: 44px;
+	line-height: 52px;
+	margin-bottom: 15px;
+	color: #0b1b1f;
+	text-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+}
+form select {
+	font-size:18px;
+	color:#000;
+  width: 100%;
+	height:40px;
+  border: 1px solid #ccc;
+padding:0px 10px;
+  background-color: #fff;
+-webkit-appearance:none;
+-moz-appearance:none;
+-o-appearance:none;
+border-radius:2px;
+}
+form label 
+{
+	text-align:left;
+	margin-bottom:15px;
+	float:left;
+	color:#000;
+}
+form input
+{
+	color:#000;
 }
