@@ -14,6 +14,7 @@ gem 'pundit'
 gem 'acts_as_tenant'
 gem 'bootstrap-sass'
 gem 'annotate'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'better_errors'
