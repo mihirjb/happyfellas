@@ -1,24 +1,8 @@
-<p id="notice"><%= notice %></p>
+<section class="hero thankyoupage">
+<div class="container">
 
-<p>
-  <strong>Email:</strong>
-  <%= @potentialclient.email %>
-</p>
-
-<p>
-  <strong>Fullname:</strong>
-  <%= @potentialclient.fullname %>
-</p>
-
-<p>
-  <strong>Worktype:</strong>
-  <%= @potentialclient.worktype %>
-</p>
-
-<p>
-  <strong>Budget:</strong>
-  <%= @potentialclient.budget %>
-</p>
-
-<%= link_to 'Edit', edit_potentialclient_path(@potentialclient) %> |
-<%= link_to 'Back', potentialclients_path %>
+<h1>Thank you, your mail was sent</h1>	
+	
+<p class="main tagline">Someone from us will soon get in touch with you.Please feel free to browse till then, Go <%= link_to 'Back', potentialclients_path %> to the main page if you want to.</p>
+</div>
+<section>

@@ -72,7 +72,6 @@ body header nav a
 section.hero
 {
 	height:500px;
-	padding-top:160px;
 	margin-bottom:60px;
 	text-align: center;
 	
@@ -80,6 +79,7 @@ section.hero
 
 section.hero h1
 {
+	padding-top:160px;
 	font-family: 'Kameron', serif;
 	font-size: 44px;
 	line-height: 52px;
@@ -390,6 +390,7 @@ body footer
 	padding: 80px 0 20px;
 	background: #2e2e2e;
 	color: #a1a08f;
+	clear:both;
 }
 
 section.testimonial-text
@@ -429,4 +430,7 @@ line-height:1.5em;
 padding:10px 0px;
 border-bottom: 1px dashed #a1a08f;
 
+}
+body section.thankyoupage
+{
 }
