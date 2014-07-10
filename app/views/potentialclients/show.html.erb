@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @potentialclient.email %>
+</p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @potentialclient.fullname %>
+</p>
+
+<p>
+  <strong>Worktype:</strong>
+  <%= @potentialclient.worktype %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @potentialclient.budget %>
+</p>
+
+<%= link_to 'Edit', edit_potentialclient_path(@potentialclient) %> |
+<%= link_to 'Back', potentialclients_path %>

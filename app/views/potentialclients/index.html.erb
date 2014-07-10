@@ -1,0 +1,31 @@
+<h1>Listing potentialclients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Fullname</th>
+      <th>Worktype</th>
+      <th>Budget</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @potentialclients.each do |potentialclient| %>
+      <tr>
+        <td><%= potentialclient.email %></td>
+        <td><%= potentialclient.fullname %></td>
+        <td><%= potentialclient.worktype %></td>
+        <td><%= potentialclient.budget %></td>
+        <td><%= link_to 'Show', potentialclient %></td>
+        <td><%= link_to 'Edit', edit_potentialclient_path(potentialclient) %></td>
+        <td><%= link_to 'Destroy', potentialclient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Potentialclient', new_potentialclient_path %>
