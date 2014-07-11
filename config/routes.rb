@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   
-  resources :potentialclients
 
   root 'pages#home'
+  resources :potentialclients
+  get 'pages/work' => 'pages#work'
   
 
   # The priority is based upon order of creation: first created -> highest priority.
