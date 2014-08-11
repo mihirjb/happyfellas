@@ -2,6 +2,15 @@ Rails.application.routes.draw do
   
 
   root 'pages#home'
+  
+  get 'pages/webdesign'
+  get 'pages/webdevelopment'
+  get 'pages/mobileappdevelopment'
+  get 'pages/seo'
+  get 'pages/socialmediamanagement'
+  get 'pages/googleanalytics'
+  
+  
   resources :potentialclients
   get 'pages/work' => 'pages#work'
   
