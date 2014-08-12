@@ -28,18 +28,17 @@
 body
 {
 	font-family: 'Raleway', sans-serif;	
-	background: #f0efd1 url("assets/bg.png") top left repeat;
+	background: #cd3060 url("assets/bg.png") top left repeat;
 	
 }
 body header .brand
 {
-	font-weight:bold;
-	color: #0b1b1f;
+	font-weight:bolder;
+	color:#000; /**#0b1b1f;******/
 	font-family: "Podkova",helvetica,sans-serif;
 	-webkit-font-smoothing: antialiased;
 	text-decoration: none;
 	font-size: 26px;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
 	float:left;
 	
 }
@@ -60,55 +59,6 @@ body header nav a
 	display: inline-block;
 	margin-left: 20px;
 }
-section.hero
-{
-	height:500px;
-	margin-bottom:60px;
-	text-align: center;
-	background-image: -webkit-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
-	background-image: -moz-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
-	background-image: -ms-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
-	background-image: -o-radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
-	background-image: radial-gradient(50% 50%,contain,rgba(255, 255, 255, .33) 25%,rgba(255, 255, 255, 0) 100%);
-	
-}
-
-section.hero h1
-{
-
-	font-family: 'Raleway', sans-serif;	
-	font-weight:900;
-	font-size: 44px;
-	line-height: 52px;
-	margin-bottom: 15px;
-	color: #0b1b1f;
-	text-shadow: -4px 4px 0 rgba(0,0,0,0.12);
-	letter-spacing: -0.05em;
-	word-spacing:0.1em;
-}
-
-section.hero p.tagline
-{
-	color: #460e00;
-	text-shadow: 2px 2px 0 rgba(0,0,0,0.12);
-	font-size: 14px;
-}
-
-section.hero p.tagline.main
-{
-	font-size: 18px;
-	line-height: 22px;
-	margin-bottom: 75px;
-}
-
-form label 
-{
-	text-align:left;
-	margin-bottom:15px;
-	float:left;
-	color:#000;
-}
-
 a.button {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -131,38 +81,68 @@ a.button {
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
     font-size: 24px;
-    background: #bf3211;
+    background: #191919;
     color: #f0efd1;
     padding: 17px 60px 13px;
     text-decoration: none;
     position: relative
 }
 
-a.button:hover {
-    background: #191919;
+ a.button:hover {
+    background: #2f3f4f;
+}
+a.button:before {
+    background-color: transparent
 }
 
-a.button:before {
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    border-radius: 30px;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.13)), color-stop(100%, transparent));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.13), transparent);
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.13), transparent);
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.13), transparent);
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.13), transparent);
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    background-color: #f5f4e9;
-    content: " ";
-    z-index: -1;
-    position: absolute;
-    width: 110%;
-    height: 135%;
-    left: -5%;
-    top: -18%
+/******************************************/
+section.hero
+{
+	height:500px;
+	margin-bottom:60px;
+	text-align: center;
+
 }
+
+section.hero h1
+{
+
+	font-family: 'Raleway', sans-serif;	
+	font-weight:900;
+	font-size: 44px;
+	line-height: 52px;
+	margin-bottom: 15px;
+	color: #fff;
+	text-shadow: -4px 4px 0 rgba(0,0,0,0.12);
+	letter-spacing: -0.05em;
+	word-spacing:0.1em;
+}
+
+section.hero p.tagline
+{
+	color: #cecece;
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.12);
+	font-size: 14px;
+}
+
+section.hero p.tagline.main
+{
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 75px;
+}
+
+ 
+
+form label 
+{
+	text-align:left;
+	margin-bottom:15px;
+	float:left;
+	color:#000;
+}
+
+
 
 /********************************************/
 section.short-intro {
@@ -362,6 +342,8 @@ section.features .button:before {
 }
 
 
+/********************************************/
+
 section.text {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -439,7 +421,7 @@ section.text p.modified {
     color: #ccc;
     padding: 10px
 }
-
+/*********************************/
 body footer
 {
 	text-align: center;
