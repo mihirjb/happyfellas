@@ -192,6 +192,22 @@ section.short-intro img
 	margin-top:60px;
 }
 
+img.popout
+{
+opacity: 0;
+-ms-filter: "alpha(Opacity=0)";
+filter: alpha(opacity=0);
+-webkit-transform: scale(0.5);
+-moz-transform: scale(0.5);
+-o-transform: scale(0.5);
+-ms-transform: scale(0.5);
+transform: scale(0.5);
+}
+img.photo.popout
+{
+	-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+	opacity:1;
+}
 /***************Can Edit ******df4b28**********/
 
 section.features {
@@ -541,3 +557,20 @@ section.work img
 	border: 1px solid #ccc;
 }
 
+/******************Responsive styles**************/
+
+@media (max-width: 1000px) {
+
+section.short-intro img
+{
+	width:680px;
+}
+
+}
+@media (max-width: 500px) {
+
+	section.short-intro img
+	{
+		display:none;
+	}
+}
