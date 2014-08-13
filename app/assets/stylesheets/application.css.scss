@@ -31,6 +31,11 @@ body
 	background: #cd3060 url("assets/bg.png") top left repeat;
 	
 }
+
+div.container
+{
+	width:80%;
+}
 body header .brand
 {
 	font-weight:bolder;
@@ -98,7 +103,7 @@ a.button:before {
 /******************************************/
 section.hero
 {
-	height:500px;
+	min-height:500px;
 	margin-bottom:60px;
 	text-align: center;
 
@@ -171,8 +176,7 @@ section.short-intro h1 span.yellow
 }
 
 section.short-intro  p.pull {
-	width:48%;
-	margin:0 1%;
+
 	text-align:left;
     margin-bottom: .8em;
     color: #fcfcfc;
@@ -180,8 +184,6 @@ section.short-intro  p.pull {
 	
 }
 section.short-intro  p.normal {
-	clear:both;
-	width:100%;
 	text-align:center;
 	color:#f0efd1;
 	padding:30px 0px;
@@ -190,24 +192,10 @@ section.short-intro  p.normal {
 section.short-intro img
 {
 	margin-top:60px;
+	text-align:center;
 }
 
-img.popout
-{
-opacity: 0;
--ms-filter: "alpha(Opacity=0)";
-filter: alpha(opacity=0);
--webkit-transform: scale(0.5);
--moz-transform: scale(0.5);
--o-transform: scale(0.5);
--ms-transform: scale(0.5);
-transform: scale(0.5);
-}
-img.photo.popout
-{
-	-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-	opacity:1;
-}
+
 /***************Can Edit ******df4b28**********/
 
 section.features {
@@ -224,8 +212,6 @@ section.features {
 
 section.features .feature {
     *zoom: 1;
-    max-width: 59em;
-    _width: 59em;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1em;
@@ -239,19 +225,15 @@ section.features .feature:after {
     clear: both
 }
 
+section.features .graphic img
+{
+	width:100%;
+}
 section.features .feature .graphic {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline
 }
 
 section.features .feature .copy {
-    width: 49.15254%;
-    float: right;
-    margin-right: 0;
-    margin-left: -1em;
-    display: inline;
+    
     line-height: 1.5
 }
 
@@ -294,33 +276,13 @@ section.features .feature.simple .graphic h2 {
 }
 
 section.features .feature.sources .graphic {
-    width: 49.15254%;
-    float: right;
     margin-right: 0;
-    #margin-left: -1em;
-    display: inline
 }
 
-section.features .feature.sources .copy {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline
-}
 
-section.features .feature.pricing .copy {
-    width: 49.15254%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -1em;
-    display: inline
-}
 
 section.features .feature.pricing .graphic {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
+ 
     padding-top: 25px;
     height: 115px;
     background: transparent url("/images/bg.pricing.jpg") center center no-repeat;
@@ -449,13 +411,11 @@ body footer
 
 section.testimonial-text
 {
-	background: #e5e3cc;
+	background: #2f3f4f;
 	padding:30px 0px 120px 0px;
 }
 
 section.testimonial-text  h1 {
-	width:48%;
-	margin:1%;
 	padding-top:200px;
     font-weight: bold;
     font-family: 'Kameron', helvetica, arial, sans-serif;
@@ -464,7 +424,7 @@ section.testimonial-text  h1 {
     margin-bottom: .5em;
 	text-align:center;
 	float:left;
-	color: #a1a08f;
+	color: #cfba58;
 	text-shadow: -1px -1px rgba(0, 0, 0, 0.6);
 	
 	
@@ -472,16 +432,13 @@ section.testimonial-text  h1 {
 
 section.testimonial-text .testimonial {
 	padding:60px 0px;
-    width: 45%;
-    float: right;
-    margin: 1%;
     display: inline-block
 }
 section.testimonial-text .testimonial p {
 
-color: #0b1b1f;
+color: #fff;
 line-height:1.5em;
-padding:10px 0px;
+padding:10px 20px;
 border-bottom: 1px dashed #a1a08f;
 
 }
@@ -560,17 +517,17 @@ section.work img
 /******************Responsive styles**************/
 
 @media (max-width: 1000px) {
-
-section.short-intro img
-{
-	width:680px;
-}
+	div.container
+	{
+		width:90%;
+	}
 
 }
 @media (max-width: 500px) {
 
-	section.short-intro img
-	{
-		display:none;
-	}
+div.container
+{
+	width:100%;
+}
+	
 }
