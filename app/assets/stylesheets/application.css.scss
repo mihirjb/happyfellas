@@ -28,7 +28,7 @@
 body
 {
 	font-family: 'Raleway', sans-serif;	
-	background: #cd3060 url("assets/bg.png") top left repeat;
+	background: #fff url("assets/bg.png") top left repeat;
 	
 }
 
@@ -54,7 +54,8 @@ body header nav
 }
 header
 {
-	margin-bottom:160px;
+	background-color:#cd3060;
+	padding-bottom:160px;
 	
 }
 body header nav a
@@ -103,8 +104,9 @@ a.button:before {
 /******************************************/
 section.hero
 {
+	background-color:#cd3060;
 	min-height:500px;
-	margin-bottom:60px;
+	padding-bottom:60px;
 	text-align: center;
 
 }
@@ -480,6 +482,7 @@ form input
 
 section.work
 {
+	background-color:#f5f4e9;
 	min-height:500px;
 	padding:60px 0px 30px;
 	border-bottom: 1px dashed #a1a08f;
@@ -498,7 +501,7 @@ section.work h1
 
 section.work p
 {
-	color:#888;
+	color:#191919;
 }
 section.work p.tags
 {
