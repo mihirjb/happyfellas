@@ -530,7 +530,11 @@ section.work img, section.work.short-intro img
 	{
 		width:90%;
 	}
-
+a.button 
+{
+	padding:10px 15px 8px;
+	font-size:14px;
+}
 }
 @media (max-width: 500px) {
 
@@ -538,5 +542,10 @@ div.container
 {
 	width:100%;
 }
+a.button 
+{
+	padding:3px 8px 2px;
+	font-size:12px;
 	
+}	
 }
