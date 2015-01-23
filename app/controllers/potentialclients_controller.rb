@@ -1,5 +1,6 @@
 class PotentialclientsController < ApplicationController
   
+  before_filter :authenticate_admin!, only: [:index,:edit, :edit, :update, :destroy]
   before_action :set_potentialclient, only: [:show, :edit, :update, :destroy]
 
   # GET /potentialclients
