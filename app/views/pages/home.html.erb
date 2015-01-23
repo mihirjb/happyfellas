@@ -16,7 +16,7 @@
         <h1 class="modal-title hero" id="somethingLabel">Send us an email</h1>
       </div>
       <div class="modal-body">
-		<%= form_for(@potentialclient, :url => '/potentialclients', :method => 'POST') do |f| %>
+		<%= form_for(@potentialclient,:html => {:class =>"popup"}, :url => '/potentialclients', :method => 'POST') do |f| %>
 		 	<div class="form-group">
 			<div class="input-group-lg">
 		 <%= f.email_field :email, :class=> "form-control required", :placeholder=>"My Email address is", :required => true %>
