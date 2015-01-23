@@ -31,7 +31,10 @@ body
 	background: #fff url("assets/bg.png") top left repeat;
 	
 }
-
+section
+{
+	min-height:560px;
+}
 div.container
 {
 	width:80%;
@@ -537,6 +540,49 @@ section.work img, section.work.short-intro img
 	border: 1px solid #ccc;
 }
 
+
+
+form
+{
+	text-align:left;
+	color:#fff;
+	font-size:1.2em;
+	margin:30px 0 60px;
+}
+form div.form-group
+{
+	padding:30px 0px;
+	border-bottom:1px solid #e1e1e7;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"], form select
+{
+	padding:1.5em 1em;
+	width:40%;
+}
+form label
+{
+	width:20%;
+}
+
+form input[type="checkbox"], form label
+{
+	text-align:left;
+	color:#000;
+}
+
+div.form-links a
+{
+	text-align:left;
+	color:#000;
+	text-decoration:none;
+	display:block;
+	padding:5px 0px;
+	font-weight:bold;
+	
+}
+
+
 /******************Responsive styles**************/
 
 @media (max-width: 1000px) {
@@ -547,6 +593,12 @@ section.work img, section.work.short-intro img
 a.button 
 {
 	font-size:14px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"], form select
+{
+	padding:1.5em 1em;
+	width:80%;
 }
 }
 @media (max-width: 500px) {
@@ -560,4 +612,13 @@ a.button
 	font-size:14px;
 	
 }	
+form input[type="text"], form input[type="email"], form input[type="password"], form select, form label
+{
+	padding:1.5em 1em;
+	width:80%;
+}
+section
+{
+	min-height:200px;
+}
 }

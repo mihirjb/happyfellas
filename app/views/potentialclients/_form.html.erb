@@ -12,22 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :fullname %><br>
+    <%= f.label :fullname %>
     <%= f.text_field :fullname %>
   </div>
   <div class="field">
-    <%= f.label :worktype %><br>
+    <%= f.label :worktype %>
     <%= f.text_field :worktype %>
   </div>
   <div class="field">
-    <%= f.label :budget %><br>
+    <%= f.label :budget %>
     <%= f.text_field :budget %>
   </div>
+	<br/>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Add", :class =>"btn btn-primary btn-lg" %>
   </div>
 <% end %>
