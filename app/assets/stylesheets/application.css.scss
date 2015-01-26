@@ -628,6 +628,10 @@ div.blog-post p.blog-post-body
 	line-height:1.5em;
 	padding:10px 0px;
 }
+section.blog-content p.social-media
+{
+	float:left;
+}
 /******************Responsive styles**************/
 
 @media (max-width: 1000px) {

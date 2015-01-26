@@ -1,6 +1,31 @@
 <% content_for :title,  "#{@post.title} is the title" %>
 
 <section class="blog-content">
+<div class="row">
+	<div class="col-md-1 col-sm-1 col-xs-12">
+		<p clas="social-media">
+			<script src="//platform.linkedin.com/in.js" type="text/javascript">
+			  lang: en_US
+			</script>
+			<script type="IN/Share" data-counter="top"></script>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>	
+			<p clas="social-media">
+
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-share-button" data-layout="box_count"></div>
+		</p>
+	</div>
+		<div class="col-md-11 col-sm-11 col-xs-10">
+			
+
 <div class="blog-post">
 <h1><%= link_to @post.title, "/posts/#{@post.slug}", :class=>"post-title" %></h1>
 <p class="blog-post-body">
@@ -10,11 +35,16 @@
 end
 %>
 </p>
+
 </div>
 <div class="post-meta-content">
 	<p>Published on: <%= @post.created_at.to_date %></p>
 </div>
 <div class="links">
 	<p><a href="/posts"><---Back</a><p> 
+</div>
+
+
+</div>
 </div>
 </section>
