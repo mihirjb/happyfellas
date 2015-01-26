@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title><%= @title %></title>
+<title><%= (yield(:title) + " - " unless yield(:title).blank?).to_s + "Happyfellas" %></title>
 	<meta name="viewport" content="initial-scale=1">
 	<meta name="description" content="<%= @metadesc %>">
 	<meta name="keywords" content="<%= @metakeywords %>">
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-	<header class="main-page">
+	<header>
 		<div class="container">
 			<h1>
 				<a class="brand" href="/">
@@ -41,12 +41,15 @@
 			</nav>
 
 		</div>
-	</header>
-
+</header>
+<div class="container">
 <%= yield %>
+</div>
 <footer>
+<div class="container">
 <span>made with smiles by</span>
 <a href="http://happyfellas.com" class="brand">happyfellas.com</a> 
+</div>
 </footer>
 </body>
 </html>

@@ -1,0 +1,20 @@
+<% content_for :title,  "#{@post.title} is the title" %>
+
+<section class="blog-content">
+<div class="blog-post">
+<h1><%= link_to @post.title, "/posts/#{@post.id}", :class=>"post-title" %></h1>
+<p class="blog-post-body">
+
+<%= auto_link(@post.body.gsub(/\n/, '<br/>').html_safe , :html => { :target => '_blank' }) do |text|
+  truncate(text, :length => 60)
+end
+%>
+</p>
+</div>
+<div class="post-meta-content">
+	<p>Published on: <%= @post.created_at.to_date %></p>
+</div>
+<div class="links">
+	<p><a href="/posts"><---Back</a><p> 
+</div>
+</section>

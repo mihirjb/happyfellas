@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   
 
+
+
+  devise_for :users
   devise_for :admins
   root 'pages#home'
   
@@ -13,6 +16,8 @@ Rails.application.routes.draw do
   
   
   resources :potentialclients
+  resources :posts
+  
   get 'pages/work' => 'pages#work'
   
 

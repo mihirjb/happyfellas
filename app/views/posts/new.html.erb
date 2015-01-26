@@ -1,0 +1,19 @@
+<section class="blog-content">
+	<%= form_for @post, :class=>"form-horizontal",  :role => "form" do |f| %>
+		<h3>Add a new post</h3>
+
+	<div class="input-group-lg">
+	<%= f.text_field :title, :class=> "form-control", :placeholder=>"Post title" %>
+	</div>  
+
+
+
+	<div class=" input-group-lg">
+		<%= f.text_area :body,:class=> "form-control", :placeholder => "Write your post content here" %>
+	</div> 
+
+	<%= f.hidden_field :user_id, :value => current_user.id %>
+	<div class="form-group form-submit col-md-12">
+	<%= f.submit "Add New post", :disable_with => 'Adding...', :class =>"btn btn-black" %>
+	<% end %>
+</section>

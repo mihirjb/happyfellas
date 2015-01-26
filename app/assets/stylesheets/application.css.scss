@@ -51,17 +51,17 @@ body header .brand
 	
 }
 
-body header nav 
+body nav 
 {
 	float:right;
 }
-header
+header.main-page
 {
 	background-color:#cd3060;
 	padding-bottom:160px;
 	
 }
-body header nav a
+body nav a
 {
 	color: #460e00;
 	font-weight: bold;
@@ -592,6 +592,42 @@ form.popup input
 	color:#000;
 }
 
+
+/******************blog content*******************/
+
+section.blog-content
+{
+	padding:60px;
+}
+section.blog-content ul.all-posts li.single-post
+{
+		padding:10px;
+		border-bottom:1px solid #ccc;
+}
+section.blog-content ul.all-posts li.single-post a 
+{
+	color:#333;
+	font-size:1.5em;
+	line-height:1.8em;
+	padding:10px;
+}
+div.blog-post h1 a.post-title
+{
+	color:#000;
+	font-weight:bold;
+}
+
+div.blog-post h1 a.post-title:hover, section.blog-content ul.all-posts li.single-post a:hover
+{
+	text-decoration:none;
+	color:#cd3060;
+}
+div.blog-post p.blog-post-body
+{
+	font-size:1.3em;
+	line-height:1.5em;
+	padding:10px 0px;
+}
 /******************Responsive styles**************/
 
 @media (max-width: 1000px) {
