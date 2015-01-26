@@ -18,6 +18,8 @@ gem 'newrelic_rpm'
 gem 'rails_autolink'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
+gem "friendly_id", "~> 5.0.1"
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]

@@ -2,7 +2,7 @@
 
 <section class="blog-content">
 <div class="blog-post">
-<h1><%= link_to @post.title, "/posts/#{@post.id}", :class=>"post-title" %></h1>
+<h1><%= link_to @post.title, "/posts/#{@post.slug}", :class=>"post-title" %></h1>
 <p class="blog-post-body">
 
 <%= auto_link(@post.body.gsub(/\n/, '<br/>').html_safe , :html => { :target => '_blank' }) do |text|

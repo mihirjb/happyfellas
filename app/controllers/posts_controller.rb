@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   
   
   def index
-    @posts = Post.all.paginate :page => params[:page],:per_page=>30
+    @posts = Post.friendly.all.paginate :page => params[:page],:per_page=>30
   end
 
   def new
@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 
   def create
      @post = current_user.posts.build(post_params)
-     if @post.save
+     if @Post.friendly.save
        flash[:success] = "post created!"
        redirect_to root_url
      else
@@ -23,17 +23,17 @@ class PostsController < ApplicationController
    end
    
    def show
-     @post = Post.find(params[:id])
+     @post = Post.friendly.find(params[:id])
    end 
    
    def edit
-      @post = Post.find(params[:id])
+      @post = Post.friendly.find(params[:id])
     end
     
     def update
-       @post = Post.find(params[:id])
+       @post = Post.friendly.find(params[:id])
         @post = current_user.posts.update_attributes(post_params)
-        if @post.save
+        if @Post.friendly.save
           flash[:success] = "post created!"
           redirect_to root_url
         else
@@ -42,7 +42,7 @@ class PostsController < ApplicationController
      end
 
    def destroy
-     @post.destroy
+     @Post.friendly.destroy
      redirect_to root_url
    end
 

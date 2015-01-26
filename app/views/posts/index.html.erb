@@ -5,7 +5,7 @@
 <ul class="all-posts">
 <% @posts.each do |p| %>
 <li class="single-post">
-<%= link_to p.title, "/posts/#{p.id}" %>
+<%= link_to p.title, "/posts/#{p.slug}" %>
 </li>
 <% end %>
 </ul>
