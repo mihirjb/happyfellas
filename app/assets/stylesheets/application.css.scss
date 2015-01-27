@@ -153,7 +153,7 @@ section.hero p.tagline.main
 {
 	font-size: 18px;
 	line-height: 22px;
-	margin-bottom: 75px;
+	margin:30px 0px 75px;
 }
 
  
@@ -598,6 +598,7 @@ form.popup input
 section.blog-content
 {
 	padding:60px;
+	position:relative;
 }
 section.blog-content ul.all-posts li.single-post
 {
@@ -628,10 +629,8 @@ div.blog-post p.blog-post-body
 	line-height:1.5em;
 	padding:10px 0px;
 }
-section.blog-content p.social-media
-{
-	float:left;
-}
+
+
 /******************Responsive styles**************/
 
 @media (max-width: 1000px) {
@@ -655,6 +654,10 @@ form input[type="text"], form input[type="email"], form input[type="password"], 
 div.container
 {
 	width:100%;
+}
+section.blog-content div.sticky-top
+{
+	display:none;
 }
 a.button 
 {

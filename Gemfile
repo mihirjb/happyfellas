@@ -19,6 +19,10 @@ gem 'rails_autolink'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 gem "friendly_id", "~> 5.0.1"
+gem 'ckeditor'
+gem 'paperclip'
+gem 'aws-sdk'
+
 
 group :development do
   gem 'better_errors'

@@ -13,8 +13,8 @@ class PostsController < ApplicationController
   end
 
   def create
-     @post = current_user.posts.build(post_params)
-     if @Post.friendly.save
+     @post = current_user.posts.build(post_params())
+     if @post.save
        flash[:success] = "post created!"
        redirect_to root_url
      else
@@ -32,8 +32,7 @@ class PostsController < ApplicationController
     
     def update
        @post = Post.friendly.find(params[:id])
-        @post = current_user.posts.update_attributes(post_params)
-        if @Post.friendly.save
+        if @post.update(post_params())
           flash[:success] = "post created!"
           redirect_to root_url
         else

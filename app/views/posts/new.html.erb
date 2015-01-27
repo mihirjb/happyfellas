@@ -9,7 +9,7 @@
 
 
 	<div class=" input-group-lg">
-		<%= f.text_area :body,:class=> "form-control", :placeholder => "Write your post content here" %>
+		<%= f.cktext_area :body,:class=> "form-control", :placeholder => "Write your post content here", :ckeditor => {:language => 'en'} %>
 	</div> 
 
 	<%= f.hidden_field :user_id, :value => current_user.id %>

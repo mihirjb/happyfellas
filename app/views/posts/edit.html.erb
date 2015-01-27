@@ -1,7 +1,6 @@
 <section class="blog-content">
 	<%= form_for @post, :class=>"form-horizontal",  :role => "form" do |f| %>
-	<div class="form-group col-md-4">
-		<h3>Edit your post</h3>
+		<h3>Add a new post</h3>
 
 	<div class="input-group-lg">
 	<%= f.text_field :title, :class=> "form-control", :placeholder=>"Post title" %>
@@ -10,12 +9,11 @@
 
 
 	<div class=" input-group-lg">
-		<%= f.text_area :body, :placeholder => "Write your post content here" %>
+		<%= f.cktext_area :body,:class=> "form-control", :placeholder => "Write your post content here", :ckeditor => {:language => 'en'} %>
 	</div> 
-	</div>
 
 	<%= f.hidden_field :user_id, :value => current_user.id %>
 	<div class="form-group form-submit col-md-12">
-	<%= f.submit "Edit post", :disable_with => 'Updating...', :class =>"btn btn-black" %>
+	<%= f.submit "Add New post", :disable_with => 'Adding...', :class =>"btn btn-black" %>
 	<% end %>
 </section>
