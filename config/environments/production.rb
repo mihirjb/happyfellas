@@ -84,14 +84,16 @@ Rails.application.configure do
   
   
   
-  # config/environments/production.rb
+
   config.paperclip_defaults = {
     :storage => :s3,
+     :url => ':s3_alias_url',
+    :path => "/:class/:id/:style/:clean_filename",
+    :s3_host_alias => 's3-us-west-2.amazonaws.com/happyfellasblog',
     :s3_credentials => {
       :bucket => ENV['S3_BUCKET_NAME'],
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
-      :endpoint => 'http://happyfellasblog.s3-us-west-2.amazonaws.com/'
     }
   }
   
