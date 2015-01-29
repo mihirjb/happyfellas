@@ -159,6 +159,7 @@ section.hero
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
+	border:5px solid white;
 }
  
 .video-container iframe,
@@ -472,6 +473,7 @@ body footer
 section.testimonial-text
 {
 	background: #2f3f4f;
+	background: #fff;
 	padding:30px 0px 120px 0px;
 }
 
@@ -496,7 +498,7 @@ section.testimonial-text .testimonial {
 }
 section.testimonial-text .testimonial p {
 
-color: #fff;
+color: #333;
 line-height:1.5em;
 padding:10px 20px;
 border-bottom: 1px dashed #a1a08f;
