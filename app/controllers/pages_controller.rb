@@ -1,15 +1,15 @@
 class PagesController < ApplicationController
   def home
-    @title ="Web design Singapore. Happyfellas, the best website designers in Singapore."
-    @metadesc= "Best web designers in Singapore. Affordable web design for e-commerce stores, Blog shops, comapny websites. Responisve web design at it's best."
-    @metakeywords = "Web design Singapore, web designers singapore, web designers, web design, wordpress web design, wordpress template, magento design customisation singapore"
+    @title ="Web design Gujarat India. Happyfellas, the best website designers in Gujarat India."
+    @metadesc= "Best web designers in Gujarat India. Affordable web design for e-commerce stores, Blog shops, comapny websites. Responisve web design at it's best."
+    @metakeywords = "Web design Gujarat India, web designers Gujarat India, web designers, web design, wordpress web design, wordpress template, magento design customisation Gujarat India"
     @potentialclient = Potentialclient.new
   end
   
   def work
-    @title ="Web design and web development portfolio Singapore - Happyfellas web studio"
+    @title ="Web design and web development portfolio Gujarat India - Happyfellas web studio"
     @metadesc= "Work samples of web designers from happyfellas.com. We have worked on various technologies like Magento, Wordpress, Joomla, Ruby on Rails etc."
-    @metakeywords = "Web design portfolio Singapore, web designers portofolio singapore, web designers portfolio, web design portfolio, wordpress web design work, wordpress template, magento design customisation case-study singapore"
+    @metakeywords = "Web design portfolio Gujarat India, web designers portofolio Gujarat India, web designers portfolio, web design portfolio, wordpress web design work, wordpress template, magento design customisation case-study Gujarat India"
   end
   
   def webdesign

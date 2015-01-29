@@ -31,6 +31,42 @@ body
 	background: #fff url("assets/bg.png") top left repeat;
 	
 }
+/*********presets**********/
+.offshadow
+{
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+.softshadow
+{
+	webkit-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+.rounded
+{
+	border-radius:5px;
+}
+.cushion
+{
+	padding:30px;
+}
+.cushion-1
+{
+	padding:10px;
+}
+.cushion-2
+{
+	padding:20px;
+}
+
+.centered-text
+{
+	text-align:center;
+}
+/***********************/
+
 section
 {
 	min-height:560px;
@@ -57,8 +93,9 @@ body nav
 }
 header.main-page
 {
-	background-color:#cd3060;
-	padding-bottom:160px;
+	/*background-color:#cd3060;*/
+	background-color:#fff;
+	padding-bottom:60px;
 	
 }
 body nav a
@@ -107,10 +144,15 @@ a.button:before {
 /******************************************/
 section.hero
 {
-	background-color:#cd3060;
+	/*background-color:#cd3060;*/
+	background-color:#b26839;
+	background: url('../clear-dark.png'),url('../bg4.jpg') center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	min-height:500px;
-	padding-bottom:60px;
-	text-align: center;
+	padding:60px 0px;
 
 }
 .video-container {
@@ -133,9 +175,9 @@ section.hero h1
 
 	font-family: 'Raleway', sans-serif;	
 	font-weight:900;
-	font-size: 44px;
-	line-height: 52px;
-	margin-bottom: 15px;
+	font-size: 24px;
+	line-height: 1.5em;
+	margin-bottom: 5px;
 	color: #fff;
 	text-shadow: -4px 4px 0 rgba(0,0,0,0.12);
 	letter-spacing: -0.05em;
@@ -144,16 +186,15 @@ section.hero h1
 
 section.hero p.tagline
 {
-	color: #cecece;
+	color: #fff;
 	text-shadow: 2px 2px 0 rgba(0,0,0,0.12);
 	font-size: 14px;
 }
 
 section.hero p.tagline.main
 {
-	font-size: 18px;
 	line-height: 22px;
-	margin:30px 0px 75px;
+	margin:10px 0px 45px;
 }
 
  
