@@ -35,7 +35,6 @@ body
     background-color: #fff;
     border-color: #fff;
 	margin-bottom:0px;
-	height:39px;
 }
 /* title */
 .navbar-default .navbar-brand {
@@ -57,6 +56,9 @@ body
 	padding: 13px 15px;
 	font-size:13px;
 	font-weight:bold;
+	background-color: #fff;
+ 
+	
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -116,6 +118,10 @@ text-decoration:none;
 		text-decoration:none;
 
     }
+.navbar-default .navbar-nav > li > a 
+{
+	text-align:left;
+}
 }
 
 /*********presets**********/
